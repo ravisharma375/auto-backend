@@ -5,11 +5,11 @@ const categoryModel = require("../src/Category/categoryModel");
 const productModel = require("../src/Product/productModel");
 
 const sequelize = new Sequelize(
-	"d3toqgtt1un5sk", //DataBase Name
-	"kozmtukukzquev", //DataBase UserName
-	"1aaee5bac90d84882f65bddd3f9fc2babe4cabcb534838b17ac884aab0a440c2", //DataBase Password
+	"d53rg79hvhuij3", //DataBase Name
+	"xjituyujubnkkr", //DataBase UserName
+	"ce2716ec8ce4f50ee32f0e122389208cde5074f71a80eb58d09449fa5d932fa5", //DataBase Password
 	{
-		host: "ec2-18-204-74-74.compute-1.amazonaws.com", //localhost
+		host: "ec2-34-239-33-57.compute-1.amazonaws.com", //localhost
 		port: "5432", //DataBase Port No
 		dialect: "postgres", //MYSQL DB
 	},
