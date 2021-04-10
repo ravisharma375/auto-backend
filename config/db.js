@@ -1,8 +1,5 @@
 const Sequelize = require("sequelize");
-const userModel = require("../src/User/userModel");
-const salesModel = require("../src/Sales/salesModel");
-const categoryModel = require("../src/Category/categoryModel");
-const productModel = require("../src/Product/productModel");
+
 
 const sequelize = new Sequelize(
 	"d53rg79hvhuij3", //DataBase Name
@@ -15,10 +12,7 @@ const sequelize = new Sequelize(
 	},
 );
 
-const Category = categoryModel(sequelize, Sequelize);
-const Product = productModel(sequelize, Sequelize);
-const User = userModel(sequelize, Sequelize);
-const Sales = salesModel(sequelize, Sequelize);
+
 
 sequelize.authenticate().then((err) => {
 	if (err) {
@@ -34,4 +28,4 @@ sequelize
 	.catch((err) => {
 		console.log(err);
 	});
-module.exports = { Sequelize, Category, Product, User, Sales };
+module.exports = { Sequelize};
