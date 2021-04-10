@@ -1,18 +1,15 @@
 const Sequelize = require("sequelize");
 
-
 const sequelize = new Sequelize(
-	"d53rg79hvhuij3", //DataBase Name
-	"xjituyujubnkkr", //DataBase UserName
-	"ce2716ec8ce4f50ee32f0e122389208cde5074f71a80eb58d09449fa5d932fa5", //DataBase Password
+	"dqr8vb23ep1b1", //DataBase Name
+	"vwzmjwzhqbwzln", //DataBase UserName
+	"a70071939726de464b1c0f9310f8fdff0f56924a7d892856664cd128bfe24b11", //DataBase Password
 	{
-		host: "ec2-34-239-33-57.compute-1.amazonaws.com", //localhost
+		host: "ec2-52-21-252-142.compute-1.amazonaws.com", //localhost
 		port: "5432", //DataBase Port No
 		dialect: "postgres", //MYSQL DB
 	},
 );
-
-
 
 sequelize.authenticate().then((err) => {
 	if (err) {
@@ -28,4 +25,4 @@ sequelize
 	.catch((err) => {
 		console.log(err);
 	});
-module.exports = { Sequelize};
+module.exports = { Sequelize };
