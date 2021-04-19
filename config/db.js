@@ -5,7 +5,7 @@ const sequelize = new Sequelize(
 	"vwzmjwzhqbwzln", //DataBase UserName
 	"a70071939726de464b1c0f9310f8fdff0f56924a7d892856664cd128bfe24b11", //DataBase Password
 	{
-		host: "localhost", //localhost
+		host: "ec2-52-21-252-142.compute-1.amazonaws.com", //localhost
 		port: "5432", //DataBase Port No
 		dialect: "postgres", //MYSQL DB
 	},
